@@ -14,6 +14,6 @@ fi
 /SERVICE01/kafka$1_partitions.sh>kafka$1_partitions.xx
 
 sed -i '/ WARN /d' *.xx
-sed -i '/ Exception /d' *.xx
-sed -i '/at kafka/d' *.xx
+sed -i '/Exception/d' *.xx
+sed -i '/	at /d' *.xx
 sed -i '/start.time/d' *.xx
