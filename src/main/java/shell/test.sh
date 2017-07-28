@@ -5,6 +5,7 @@ if [ x"$1" == x ]; then
     exit 1
 fi
 
+/SERVICE01/kafka$1_create.sh
 /SERVICE01/kafka$1_messagesize.sh>kafka$1_messagesize.xx
 /SERVICE01/kafka$1_pcs.sh>kafka$1_pcs.xx
 /SERVICE01/kafka$1_batchs.sh>kafka$1_batchs.xx
